@@ -150,3 +150,23 @@ footer {
   color: #aaa;
   margin-top: 50px;
 }
+
+/* Login Form */
+.login-form {
+  max-width: 300px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.error {
+  color: #dc2626;
+  text-align: center;
+}

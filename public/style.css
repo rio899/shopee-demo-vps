@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2d3436;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #636e72;
+}
+
+/* Navigation Tabs */
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab-nav button {
+  padding: 10px 20px;
+  background-color: #dfe6e9;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+.tab-nav button:hover {
+  background-color: #b2bec3;
+}
+
+/* Action Button */
+.actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #00b894;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #019875;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #dfe6e9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Assistant Box */
+.assistant-box {
+  background-color: #eafaf1;
+  border-left: 6px solid #00b894;
+  padding: 15px 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Workflow Table */
+.workflow-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.workflow-table th,
+.workflow-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.workflow-table th {
+  background-color: #f1f2f6;
+}
+
+/* Shopee Tab Dummy Data */
+.shopee-list {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 50px;
+}

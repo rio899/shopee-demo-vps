@@ -101,8 +101,12 @@ button:hover {
   margin-top: 30px;
   border-radius: 8px;
   font-size: 0.95rem;
+  gap: 10px;
 }
 
+.assistant-box button {
+  margin-top: 14px;
+}
 /* Workflow Table */
 .workflow-table {
   width: 100%;

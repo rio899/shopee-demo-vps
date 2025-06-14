@@ -7,6 +7,9 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const DEMO_USER = { username: 'demo', password: 'demo123' };
+let isLoggedIn = false;
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -17,14 +20,18 @@ app.get('/login', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
-  const { email, password } = req.body;
-  if (email === 'trial@neurolynx.ai' && password === 'test123') {
+  const { username, password } = req.body;
+  if (username === DEMO_USER.username && password === DEMO_USER.password) {
+    isLoggedIn = true;
     return res.redirect('/');
   }
   res.redirect('/login?error=1');
 });
 
 app.get('/', (req, res) => {
+  if (!isLoggedIn) {
+    return res.redirect('/login');
+  }
   res.sendFile(path.join(__dirname, 'views', 'dashboard.html'));
 });
 
